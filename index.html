@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/797719ed74.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/logo.png" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Who do we have here?</p>
+                <h1>Hello, I'm <span>John</span><br> Shinwoo Ahn</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------- about-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/79C82550-289B-493F-8AD5-FE7F39A198EA.JPG" alt="Profile">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello, I'm John. I am a recent graduate from the University of Texas at Austin, where I earned a Bachelor of Science and Art in Biochemistry along with a certification in Elements of Computing. My academic background has equipped me with a solid foundation in biochemical techniques and a strong proficiency in data analysis, making me well-suited for roles in data analysis and bioinformatics.</p>
+                    <p>I am passionate about leveraging my biochemical knowledge and data analytical skills to contribute to innovative research and data-driven solutions. I am actively seeking opportunities in data analysis and bioinformatics where I can apply my expertise to advance scientific discovery and improve healthcare outcomes.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Analytics</span><br>Python, SQL, Pandas, Jupyter, Machine Learning, R Programming, Data Visualization</li>
+                            <li><span>Biochemical Techniques</span><br>Centifugation, Mass Spectrometry, Enzyme Assays, Polymerase Chain Reaction(PCR), Protein-Protein Interaction Assays, Pymol, Spectrometry, Electrophoresis, SDS-PAGE Gel</li>
+                            <li><span>Web Programming</span><br>HTML, CSS, Javascript, PHP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>January 2024- May 2024</span><br>Data Science Teaching Assistant</li>
+                            <li><span>2023-Present</span><br>Private Calculus and Physics Tutor</li>
+                            <li><span>2022-Present</span><br>Server/Training Team at BBQ Chicken</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>BSA in Biochemistry from The University of Texas at Austin</li>
+                            <li><span>2023-2024</span><br>Elements of Computing Certificate from the University of Texas at Austin </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------- portfolio-------->
+        <!-- Portfolio Section -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle">Portfolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="bioinformatics.png" alt="Work">
+                        <div class="layer">
+                            <h3>Ribo LTP Data Analysis</h3>
+                            <p>This R script is used for analyzing ribosome profiling and RNA-seq data to study gene expression and perform quality control checks. It performs various bioinformatics analyses including biotype and GC content filtering, length and GC content bias detection, normalization, and differential expression analysis using the NOISeq package.</p>
+                            <a href="https://github.com/jahn5244/ribo-data-analysis"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="amazon.png" alt="Work">
+                        <div class="layer">
+                            <h3>Amazon Prime Data Analysis</h3>
+                            <p>This project aims to predict Amazon Prime users' gender based on their favorite genres and engagement metrics using classification models, specifically Logistic Regression and Random Forest Classifier. </p>
+                            <a href="https://github.com/jahn5244/amazon-data-analysis"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="rats.jpeg" alt="Work">
+                        <div class="layer">
+                            <h3>Mice Protein Expression Analysis</h3>
+                            <p>This project is designed to analyze protein expression data from mice, providing insights into various statistical measures such as maximum, minimum, median values, and identifying the top and bottom 5 mice based on their protein expression levels. This repository includes both the main analysis code and the accompanying test cases to ensure the functionality is working correctly.
+
+                            </p>
+                            <a href="https://github.com/jahn5244/mice-expression-project"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---------- contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> johnsahn2002@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 9408088597</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/shinwoojohn.ahn"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/john.ahn5/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/john-ahn-176074166/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>        
+        </div>
+        <div class="copyright">
+            <p>Copyright © John. Made with <i class="fas fa-heart"></i>by Easy Tutorials</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+        function closemenu(){
+            sidemenu.style.right = '-200px';
+        }
+
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyMFy_zZpDb0yHbF_rEINJZttocHwEL5Fv-KHvWkoKrWg0_mS2pO-JQramWNzvXlE0F/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thanks for submitting your message!";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
